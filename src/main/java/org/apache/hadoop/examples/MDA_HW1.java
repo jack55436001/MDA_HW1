@@ -95,9 +95,9 @@ public static class MatrixReducer
 public static void main(String[] args) throws Exception {
     Configuration conf = new Configuration();
     String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
-    conf.set("m","3");
-    conf.set("j","3");
-    conf.set("k","3");
+    conf.set("m","500");
+    conf.set("j","500");
+    conf.set("k","500");
     if (otherArgs.length != 2) {
         System.err.println("Usage: MatrixMul <in> <out>");
         System.exit(2);
